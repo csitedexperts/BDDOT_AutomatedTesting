@@ -3,7 +3,7 @@ package page_objects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class YahooPage { 
+public class BDDotHospitalPage { 
 
 	private static WebDriver driver;
 	
@@ -24,7 +24,7 @@ public class YahooPage {
 	}
 
 
-	public YahooPage(WebDriver driver) {
+	public BDDotHospitalPage(WebDriver driver) {
 		System.out.println("YahooPage constructor initiated....");
 		
 	}

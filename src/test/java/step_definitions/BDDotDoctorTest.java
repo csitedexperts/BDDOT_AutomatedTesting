@@ -6,10 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import helper_classes.Hooks;
-import page_objects.GooglePage;
+import page_objects.BDDotDoctorPage;
 
 
-public class GitHubRepoTest {
+public class BDDotDoctorTest {
 	
 /*	For no main()
  * 
@@ -24,7 +24,7 @@ public class GitHubRepoTest {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://www.github.com");
+		driver.get("https://www.bddot.com");
 		
 		Assert.assertEquals(driver.getPageSource().contains("GitHub"), true);
 		

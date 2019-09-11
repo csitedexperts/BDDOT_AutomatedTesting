@@ -3,7 +3,7 @@ package page_objects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class GooglePage { 
+public class BDDotDoctorPage { 
 
 
 	private static WebDriver driver;
@@ -27,7 +27,7 @@ public class GooglePage {
 	}
 
 
-	public GooglePage(WebDriver driver) {
+	public BDDotDoctorPage(WebDriver driver) {
 		System.out.println("GooglePage constructor initiated....");
 		//		super(driver);
 		//		this.driver = driver;

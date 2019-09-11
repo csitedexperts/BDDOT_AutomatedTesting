@@ -8,13 +8,13 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import helper_classes.Hooks;
-import page_objects.GooglePage;
+import page_objects.BDDotDoctorPage;
 
-public class GoogleFooterLinkTests extends GooglePage{
+public class BDDotHospitalTests extends BDDotDoctorPage{
 
 	private static WebDriver driver;
 
-	public GoogleFooterLinkTests() {
+	public BDDotHospitalTests() {
 		super(driver);
 		driver = Hooks.webDriver;
 		System.out.println("This is the GoogleFooterLinkTests constructor....");
@@ -23,7 +23,7 @@ public class GoogleFooterLinkTests extends GooglePage{
 
 	@When("^I click on the Privacy link$")
 	public void i_click_on_the_Privacy_link() throws Throwable {
-		driver.findElement(GooglePage.Privacy_Link).click();
+		driver.findElement(BDDotDoctorPage.Privacy_Link).click();
 		Thread.sleep(2000);   // temporary wait
 	}
 
@@ -35,7 +35,7 @@ public class GoogleFooterLinkTests extends GooglePage{
 
 	@When("^I click on the Terms link$")
 	public void i_click_on_the_Terms_link() throws Throwable {
-		driver.findElement(GooglePage.Terms_Link).click();
+		driver.findElement(BDDotDoctorPage.Terms_Link).click();
 
 		Thread.sleep(2000);   // temporary wait
 	}
@@ -64,7 +64,7 @@ public class GoogleFooterLinkTests extends GooglePage{
 
 	@Given("^I select the Privacy link in the Google footer$")
 	public void i_select_the_Privacy_link_in_the_Google_footer() throws Throwable {
-		driver.findElement(GooglePage.Privacy_Link).click();
+		driver.findElement(BDDotDoctorPage.Privacy_Link).click();
 		Thread.sleep(2000);   // temporary wait
 	}
 
@@ -90,7 +90,7 @@ public class GoogleFooterLinkTests extends GooglePage{
 
 	@Given("^I select the Terms link in the Google footer$")
 	public void i_select_the_Terms_link_in_the_Google_footer() throws Throwable {
-		driver.findElement(GooglePage.Terms_Link).click();
+		driver.findElement(BDDotDoctorPage.Terms_Link).click();
 		Thread.sleep(2000);   // temporary wait
 
 	}
