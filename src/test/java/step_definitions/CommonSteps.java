@@ -19,8 +19,8 @@ public class CommonSteps {
 
 	@Given("^I launch the BDDOT home page$")
 	public void i_launch_the_BDDOT_home_page() throws Throwable {
-		driver.get("https://www.bddot.com");
-//		driver.get("https://www.bddot.com");
+		driver.get("http://www.bddot.com");
+//		driver.get("http://www.bddot.com/");
 			
 	}
 
