@@ -17,7 +17,7 @@ public class BDDotHospitalTests extends BDDotDoctorPage{
 	public BDDotHospitalTests() {
 		super(driver);
 		driver = Hooks.webDriver;
-		System.out.println("This is the GoogleFooterLinkTests constructor....");
+		System.out.println("This is the BDDotHospitalTests constructor....");
 	}
 
 
@@ -79,45 +79,6 @@ public class BDDotHospitalTests extends BDDotDoctorPage{
 	public void i_click_on_a_specific_Privacy_Policy(String privacyPolicy_Link) throws Throwable {
 		driver.findElement(By.linkText(privacyPolicy_Link)).click();
 		Thread.sleep(2000);   // temporary wait
-	}
-
-	@Then("^I verify the selected \"(.*?)\" Privacy Policy detail$")
-	public void i_verify_the_selected_Privacy_Policy_detail(String privacyPolicy_Text) throws Throwable {
-
-		Assert.assertEquals(true, driver.getPageSource().contains(privacyPolicy_Text));
-		Thread.sleep(2000);   // temporary wait
-	}
-
-	@Given("^I select the Terms link in the Google footer$")
-	public void i_select_the_Terms_link_in_the_Google_footer() throws Throwable {
-		driver.findElement(BDDotDoctorPage.Terms_Link).click();
-		Thread.sleep(2000);   // temporary wait
-
-	}
-
-	@When("^I click on the Technologies and Principles tab$")
-	public void i_click_on_the_Technologies_and_Principles_tab() throws Throwable {
-
-		driver.findElement(By.linkText("Technologies and Principles")).click();
-		Thread.sleep(2000);   // temporary wait
-
-	}
-	
-
-	@When("^I click on a specific Technology \"(.*?)\"$")
-	public void i_click_on_a_specific_Technology(String technology_Link) throws Throwable {
-
-		driver.findElement(By.linkText(technology_Link)).click();
-		Thread.sleep(2000);   // temporary wait
-
-	}
-
-	@Then("^I verify the selected \"(.*?)\" Technology detail$")
-	public void i_verify_the_selected_Technology_detail(String technologyDetail_Text) throws Throwable {
-
-		Assert.assertEquals(true, driver.getPageSource().contains(technologyDetail_Text));
-		Thread.sleep(2000);   // temporary wait
-
 	}
 
 

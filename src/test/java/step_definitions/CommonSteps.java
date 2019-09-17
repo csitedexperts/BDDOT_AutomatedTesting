@@ -17,10 +17,11 @@ public class CommonSteps {
 	}
 
 
-	@Given("^I launch the Google home page$")
-	public void i_launch_the_Google_home_page() throws Throwable {
-		driver.get("https://www.google.com");
-		
+	@Given("^I launch the BDDOT home page$")
+	public void i_launch_the_BDDOT_home_page() throws Throwable {
+		driver.get("https://www.bddot.com");
+//		driver.get("https://www.bddot.com");
+			
 	}
 
 

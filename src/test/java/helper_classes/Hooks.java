@@ -20,7 +20,7 @@ public class Hooks {
 	public void getBrowser(Scenario scenario) throws Exception {
 		System.out.println("Before test....");
 		
-/*		browser = GlobalSettings.getInstance().getProperty("BROWSER");
+/*		browser = DriverManager.getInstance().getProperty("BROWSER");
 		System.out.println("Selected browser is: " + browser);
 */
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");  // For Windows
