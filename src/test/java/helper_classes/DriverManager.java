@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.net.InetAddress;
 import java.util.Properties;
 
-public final class DriverManager {
+public class DriverManager {
 
 	private static InputStream propertyFileStream;
 	private static Properties property;

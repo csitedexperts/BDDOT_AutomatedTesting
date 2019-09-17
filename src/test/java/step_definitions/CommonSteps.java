@@ -17,23 +17,17 @@ public class CommonSteps {
 	}
 
 
-	@Given("^I launch the BDDOT home page$")
-	public void i_launch_the_BDDOT_home_page() throws Throwable {
+
+@Given("^I launch the BDDOT home page$")
+public void i_launch_the_BDDOT_home_page() throws Throwable {
 		driver.get("http://www.bddot.com");
 //		driver.get("http://www.bddot.com/");
-			
-	}
 
+//		Assert.assertEquals(true, driver.getPageSource().contains("SEARCH FOR DOCTOR/HOSPITAL"));
+//		Thread.sleep(2000);
 
+}
 
-	@Given("^I launch the Google home page url$")
-	public void i_launch_the_Google_home_page_url() throws Throwable {
-		System.out.println("Launching the Google home page . . . .  . . . ");
-		//				BaseClass.launchWebApp();
-		driver.get("https://www.google.com");
-		Assert.assertEquals(true, driver.getPageSource().contains("Google"));
-		Thread.sleep(2000);
-	}
 
 
 	@Given("^I scroll down to the end of the page$")
