@@ -28,12 +28,24 @@ public class DoctorPageTests extends DoctorPage{
 	}
 
 	@Then("^I see the doctor page$")
-	public void i_see_the_doctor_page() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	 
+	public void i_see_the_doctor_page() throws Throwable {	 
 		Assert.assertEquals(true, driver.getPageSource().contains("Azizur Rahman"));
 		Thread.sleep(2000);   // temporary wait
 
-	 }
+	}
+
+	@Then("^I see the doctor name filter$")
+	public void i_see_doctor_name_filter() throws Throwable {
+		Assert.assertTrue(driver.findElement(DoctorPage.Doctor_Name_Filter).isDisplayed());
+
+		Thread.sleep(2000);   // temporary wait
+	}
+	
+	@Then("^I see the availability sidebar$")
+	public void i_see_availability_sidebar() throws Throwable {
+		Assert.assertTrue(driver.findElement(DoctorPage.Availability_Side_Bar).isDisplayed());
+
+		Thread.sleep(2000);   // temporary wait
+	}
 
 }
