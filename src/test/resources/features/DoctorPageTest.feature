@@ -10,5 +10,6 @@ Feature: BDDOT Homepage Checkup
   Scenario: Doctor Link test
     When I click on the doctor link
     Then I see the doctor page
-    Then I see the doctor name filter
+    Then I see the doctor filter
+    And I can click on the Search Type Dropdown
     Then I see the availability sidebar
