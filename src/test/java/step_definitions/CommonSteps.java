@@ -22,9 +22,9 @@ public class CommonSteps {
 
 	@Given("^I launch the BDDOT home page$")
 	public void i_launch_the_BDDOT_home_page() throws Throwable {
-		driver.get("http://www.bddot.com");
+		driver.get("http://dev.bddot.com");
 		
-		Assert.assertEquals(true, driver.getPageSource().contains("SEARCH FOR DOCTOR/HOSPITAL"));
+		Assert.assertEquals(true, driver.getPageSource().contains("Services"));
 		Thread.sleep(2000);
 	}
 

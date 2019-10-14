@@ -8,7 +8,7 @@ Feature: BDDOT Homepage Checkup
 
   Scenario: Doctor Link test
     When I click on the doctor link
-    Then I see the doctor page
+    Then I am on the doctor page
 
   Scenario: Doctor Filter test
   	When I click on the doctor link
@@ -34,10 +34,10 @@ Feature: BDDOT Homepage Checkup
   	When I click on the doctor link
   	When I am on the doctor page
   	Then I scroll to the bottom of the page
-  	Then I see About Us header
-  	And I see copyright 2018
-  	And I see News Letter
-  	Then I scroll back to the top
+  #	Then I see About Us header
+  #	And I see copyright 2018
+  #	And I see News Letter
+  #	Then I scroll back to the top
   	And I see search total count
   
   Scenario: Book doctor appointment

@@ -10,35 +10,35 @@ public class DoctorPage {
 	public static By Doctor_link = By.linkText("DOCTOR");
 	
 	//Booking
-	public static By Book_Appoinment_Header = By.xpath("/html/body/div[1]/h3");
-	public static By First_Doctor_Book_Link = By.xpath("/html/body/section/div/div[2]/div[1]/div[2]/div[3]/div[2]/a");
-	public static By Patient_Name_Input = By.id("PatientName");
-	public static By Phone_Number = By.id("Phone");
+	public static By Book_Appoinment_Header = By.xpath("//*[@id=\"__BVID__144___BV_modal_header_\"]/h5");
+	public static By First_Doctor_Book_Link = By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/section/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[1]/button");
+	public static By Patient_Name_Input = By.name("patientName");
+	public static By Phone_Number = By.name("Phone");
 	
 	//Filter Bar
-	public static By Doctor_Name_Filter = By.id("SpecilityOrDoctorName");
-	public static By Search_Option_Search_Type = By.id("SearchType");
-	public static By Search_Type_Dropdown = By.id("SearchTypeValue");
-	public static By Search_Option_Search_Location = By.id("DictictName");
-	public static By Search_Total_Count = By.id("totalCount");
+	public static By Search_Option_Search_Type = By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/section/div/div[1]/div[2]/div/div[1]/div/div");
+	public static By Search_Type_Dropdown = By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/section/div/div[1]/div[2]/div/div[1]/div/div/div[1]/input");
+	public static By Search_Option_Search_Location = By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/section/div/div[1]/div[2]/div/div[2]");
+	public static By Search_Total_Count = By.xpath("//*[@id=\"app\"]/div/div[3]/div[2]/section/div/div[2]/div/div[2]/div[1]/div/span");
 	
 	//Side Bar
-	public static By Side_Bar = By.className("sidebar");
-	public static By Availability_Side_Bar = By.xpath("/html/body/section/div/div[1]/div/h4[1]");
-	public static By Availability_Timer_Slider = By.id("TimeRange");
-	public static By Consultation_Side_Bar = By.xpath("/html/body/section/div/div[1]/div/h4[2]");
-	public static By Consultation_Fee_Slider = By.id("FeeRange");
-	public static By Rating_Side_Bar = By.xpath("/html/body/section/div/div[1]/div/h4[3]");
-	public static By Rating_Five_Star = By.id("rating_5");
-	public static By Gender_Side_Bar = By.xpath("/html/body/section/div/div[1]/div/h4[4]");
+	private static String sideBarXPath = "//*[@id=\"app\"]/div/div[3]/div[2]/section/div/div[2]/div/div[1]/div";
+	public static By Side_Bar = By.className("ListWidgets");
+	public static By Availability_Side_Bar = By.xpath(sideBarXPath + "/div[1]/h4");
+	public static By TimeRange_Side_Bar = By.xpath(sideBarXPath + "/div[2]/h4");
+	public static By Consultation_Side_Bar = By.xpath(sideBarXPath + "/div[3]/h4");
+//	public static By Consultation_Fee_Slider = By.id("FeeRange");
+	public static By Rating_Side_Bar = By.xpath(sideBarXPath + "/div[4]/h4");
+	public static By Rating_Five_Star = By.xpath(sideBarXPath + "/div[4]/div/div/div/span[5]");
+	public static By Gender_Side_Bar = By.xpath(sideBarXPath + "/div[5]/h4");
 	public static By Gender_Male_Check = By.id("gender_male");
-	public static By Location_Side_Bar = By.xpath("/html/body/section/div/div[1]/div/h4[5]");
+	public static By Location_Side_Bar = By.xpath(sideBarXPath + "/div[6]/h4");
 	
 	//Footer
-	public static By About_Us_Footer = By.xpath("/html/body/footer/div[1]/div/div/div[2]/h3/b");
-	public static By News_Letter_Footer = By.xpath("/html/body/footer/div[1]/div/div/div[4]/h3/b");
-	public static By Copyright_Footer = By.xpath("/html/body/footer/div[2]/div/p");
-	public static By Scroll_Top_Footer = By.xpath("/html/body/footer/div[2]/span/a/i");
+//	public static By About_Us_Footer = By.xpath("/html/body/footer/div[1]/div/div/div[2]/h3/b");
+//	public static By News_Letter_Footer = By.xpath("/html/body/footer/div[1]/div/div/div[4]/h3/b");
+//	public static By Copyright_Footer = By.xpath("/html/body/footer/div[2]/div/p");
+//	public static By Scroll_Top_Footer = By.xpath("/html/body/footer/div[2]/span/a/i");
 			
 	public static boolean isDisplayed(WebDriver driver, By xPath){
 		return driver.findElement(xPath).isDisplayed();
