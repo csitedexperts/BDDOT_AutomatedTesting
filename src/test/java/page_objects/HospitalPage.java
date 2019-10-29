@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class HospitalPage { 
 
 	private static WebDriver driver;
-	public static By Hospital_link = By.linkText("Hospital");
+	public static By Hospital_link = By.linkText("HOSPITAL");
 	
 	//Filter Bar
 	public static By Search_Option_Search_Type = By.id("SearchType");
@@ -23,7 +23,7 @@ public class HospitalPage {
 	//Side Bar
 	public static By Side_Bar = By.className("sidebar");
 	public static By Hospital_Name_Header = By.xpath("/html/body/section/div/div[1]/div/div[1]/h4");
-	public static By Hospital_Input_Filter = By.id("filterHospitalName");
+	public static By Hospital_Name_Input_Filter = By.id("filterHospitalName");
 	public static By Hospital_Reset_Filter_Button = By.id("reset-all");
 	public static By Hospital_Apply_Filter_Button = By.id("apply-filter");
 	public static By Location_Name_Header = By.xpath("/html/body/section/div/div[1]/div/div[3]/h4");

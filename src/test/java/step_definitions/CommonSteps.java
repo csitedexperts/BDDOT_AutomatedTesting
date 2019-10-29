@@ -28,6 +28,13 @@ public class CommonSteps {
 		Thread.sleep(2000);
 	}
 
+	@Given("^I launch the OLD BDDOT home page$")
+	public void i_launch_the_OLD_BDDOT_home_page() throws Throwable {
+		driver.get("http://www.bddot.com");
+		
+		Assert.assertEquals(true, driver.getPageSource().contains("SEARCH FOR DOCTOR/HOSPITAL"));
+		Thread.sleep(2000);
+	}
 
 
 	// @Given("^I scroll down to the end of the page$")
