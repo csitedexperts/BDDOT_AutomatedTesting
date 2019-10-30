@@ -1,18 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/DoctorPageTest.feature");
-formatter.feature({
-  "line": 2,
-  "name": "BDDOT Homepage Checkup",
-  "description": "As a BDDOT tester,\r\nI want to test the landing homeage of the web application",
-  "id": "bddot-homepage-checkup",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@regression"
-    }
-  ]
-});
-formatter.uri("features/HomePageTest.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/HomePageTest.feature");
 formatter.feature({
   "line": 2,
   "name": "GitHub Repo Test",
@@ -22,7 +8,7 @@ formatter.feature({
   "tags": [
     {
       "line": 1,
-      "name": "@regression"
+      "name": "@regressionnn"
     }
   ]
 });
@@ -36,155 +22,65 @@ formatter.scenarioOutline({
 });
 formatter.step({
   "line": 10,
-  "name": "I launch the bddot home page",
+  "name": "I select \"\u003chomePageLink_text\u003e\" link on the bddot home page",
   "keyword": "When "
 });
 formatter.step({
   "line": 11,
-  "name": "I see the bddot home page elements",
+  "name": "I verify the selected page by the existence of the \"\u003clinkedPage_text\u003e\" text",
   "keyword": "Then "
-});
-formatter.uri("features/HospitalPageTests.feature");
-formatter.feature({
-  "line": 2,
-  "name": "BDDOT Homepage Checkup",
-  "description": "As a BDDOT tester,\r\nI want to test the landing homeage of the web application",
-  "id": "bddot-homepage-checkup",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@regression"
-    }
-  ]
-});
-formatter.before({
-  "duration": 5061129200,
-  "status": "passed"
-});
-formatter.background({
-  "line": 6,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "I launch the OLD BDDOT home page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CommonSteps.i_launch_the_OLD_BDDOT_home_page()"
-});
-formatter.result({
-  "duration": 10120866500,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 9,
-  "name": "Hospital Link test",
-  "description": "",
-  "id": "bddot-homepage-checkup;hospital-link-test",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 10,
-  "name": "I click on the Hospital link",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "I see the Hospital page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "HospitalPageTests.i_click_on_the_Hospital_link()"
-});
-formatter.result({
-  "duration": 3064097700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HospitalPageTests.i_see_the_Hospital_page()"
-});
-formatter.result({
-  "duration": 2019215300,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 1680037100,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 13,
-  "name": "Hospital Sidebar \"\u003cnameFilter\u003e\" test",
-  "description": "",
-  "id": "bddot-homepage-checkup;hospital-sidebar-\"\u003cnamefilter\u003e\"-test",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 14,
-  "name": "I click on the Hospital link",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 15,
-  "name": "I see the Hospital page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "I see the hospital sidebar",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "I see the hospital name section",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 18,
-  "name": "I see the hospital name filter",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 19,
-  "name": "I input a hospital \"\u003cnameFilter\u003e\" into the filter",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 20,
-  "name": "I click hospital name Apply Filter",
-  "keyword": "And "
 });
 formatter.examples({
-  "line": 22,
+  "line": 13,
   "name": "",
   "description": "",
-  "id": "bddot-homepage-checkup;hospital-sidebar-\"\u003cnamefilter\u003e\"-test;",
+  "id": "github-repo-test;checking-some-elements-from-the-home-page;",
   "rows": [
     {
       "cells": [
-        "nameFilter"
+        "homePageLink_text",
+        "linkedPage_text"
       ],
-      "line": 23,
-      "id": "bddot-homepage-checkup;hospital-sidebar-\"\u003cnamefilter\u003e\"-test;;1"
+      "line": 14,
+      "id": "github-repo-test;checking-some-elements-from-the-home-page;;1"
     },
     {
       "cells": [
-        "Sharafat Hospital"
+        "DOCTOR",
+        "HOSPITAL"
       ],
-      "line": 24,
-      "id": "bddot-homepage-checkup;hospital-sidebar-\"\u003cnamefilter\u003e\"-test;;2"
+      "line": 15,
+      "id": "github-repo-test;checking-some-elements-from-the-home-page;;2"
+    },
+    {
+      "cells": [
+        "HOSPITAL",
+        "HOSPITAL"
+      ],
+      "line": 16,
+      "id": "github-repo-test;checking-some-elements-from-the-home-page;;3"
+    },
+    {
+      "cells": [
+        "DIAGNOSTIC",
+        "DIAGNOSTIC"
+      ],
+      "line": 17,
+      "id": "github-repo-test;checking-some-elements-from-the-home-page;;4"
+    },
+    {
+      "cells": [
+        "AMBULANCE",
+        "AMBULANCE"
+      ],
+      "line": 18,
+      "id": "github-repo-test;checking-some-elements-from-the-home-page;;5"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 4112097100,
+  "duration": 2109275962,
   "status": "passed"
 });
 formatter.background({
@@ -196,125 +92,258 @@ formatter.background({
 });
 formatter.step({
   "line": 7,
-  "name": "I launch the OLD BDDOT home page",
+  "name": "I launch the BDDOT home page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "CommonSteps.i_launch_the_OLD_BDDOT_home_page()"
+  "location": "CommonSteps.i_launch_the_BDDOT_home_page()"
 });
 formatter.result({
-  "duration": 7834642100,
+  "duration": 25228653045,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 24,
-  "name": "Hospital Sidebar \"Sharafat Hospital\" test",
+  "line": 15,
+  "name": "checking some elements from the home page",
   "description": "",
-  "id": "bddot-homepage-checkup;hospital-sidebar-\"\u003cnamefilter\u003e\"-test;;2",
+  "id": "github-repo-test;checking-some-elements-from-the-home-page;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@regression"
+      "name": "@regressionnn"
     }
   ]
 });
 formatter.step({
-  "line": 14,
-  "name": "I click on the Hospital link",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 15,
-  "name": "I see the Hospital page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "I see the hospital sidebar",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "I see the hospital name section",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 18,
-  "name": "I see the hospital name filter",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 19,
-  "name": "I input a hospital \"Sharafat Hospital\" into the filter",
+  "line": 10,
+  "name": "I select \"DOCTOR\" link on the bddot home page",
   "matchedColumns": [
     0
   ],
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.step({
-  "line": 20,
-  "name": "I click hospital name Apply Filter",
-  "keyword": "And "
+  "line": 11,
+  "name": "I verify the selected page by the existence of the \"HOSPITAL\" text",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "HospitalPageTests.i_click_on_the_Hospital_link()"
+  "arguments": [
+    {
+      "val": "DOCTOR",
+      "offset": 10
+    }
+  ],
+  "location": "HomePageTests.i_select_link_on_the_bddot_home_page(String)"
 });
 formatter.result({
-  "duration": 3209406100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HospitalPageTests.i_see_the_Hospital_page()"
-});
-formatter.result({
-  "duration": 2011948100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HospitalPageTests.i_see_the_sidebar()"
-});
-formatter.result({
-  "duration": 2028594300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HospitalPageTests.i_see_hospital_name_section()"
-});
-formatter.result({
-  "duration": 28041800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HospitalPageTests.i_see_hospital_name_filter()"
-});
-formatter.result({
-  "duration": 25129800,
+  "duration": 2106287172,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Sharafat Hospital",
-      "offset": 20
+      "val": "HOSPITAL",
+      "offset": 52
     }
   ],
-  "location": "HospitalPageTests.i_input_hospital_name_into_filter(String)"
+  "location": "HomePageTests.i_verify_the_selected_page_by_the_existence_of_the_text(String)"
 });
 formatter.result({
-  "duration": 2501898000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "HospitalPageTests.i_click_hospital_name_apply_filter()"
-});
-formatter.result({
-  "duration": 69963700,
+  "duration": 2029215414,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1264974500,
+  "duration": 1205231284,
   "status": "passed"
 });
+formatter.before({
+  "duration": 1039119883,
+  "status": "passed"
+});
+formatter.background({
+  "line": 6,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 7,
+  "name": "I launch the BDDOT home page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CommonSteps.i_launch_the_BDDOT_home_page()"
+});
+formatter.result({
+  "duration": 25877799578,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 16,
+  "name": "checking some elements from the home page",
+  "description": "",
+  "id": "github-repo-test;checking-some-elements-from-the-home-page;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@regressionnn"
+    }
+  ]
+});
+formatter.step({
+  "line": 10,
+  "name": "I select \"HOSPITAL\" link on the bddot home page",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "I verify the selected page by the existence of the \"HOSPITAL\" text",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "HOSPITAL",
+      "offset": 10
+    }
+  ],
+  "location": "HomePageTests.i_select_link_on_the_bddot_home_page(String)"
+});
+formatter.result({
+  "duration": 2082585008,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "HOSPITAL",
+      "offset": 52
+    }
+  ],
+  "location": "HomePageTests.i_verify_the_selected_page_by_the_existence_of_the_text(String)"
+});
+formatter.result({
+  "duration": 2018216013,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1163220732,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1046788919,
+  "status": "passed"
+});
+formatter.background({
+  "line": 6,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 7,
+  "name": "I launch the BDDOT home page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CommonSteps.i_launch_the_BDDOT_home_page()"
+});
+formatter.result({
+  "duration": 63685844183,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 17,
+  "name": "checking some elements from the home page",
+  "description": "",
+  "id": "github-repo-test;checking-some-elements-from-the-home-page;;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@regressionnn"
+    }
+  ]
+});
+formatter.step({
+  "line": 10,
+  "name": "I select \"DIAGNOSTIC\" link on the bddot home page",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "I verify the selected page by the existence of the \"DIAGNOSTIC\" text",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "DIAGNOSTIC",
+      "offset": 10
+    }
+  ],
+  "location": "HomePageTests.i_select_link_on_the_bddot_home_page(String)"
+});
+formatter.result({
+  "duration": 2063435408,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "DIAGNOSTIC",
+      "offset": 52
+    }
+  ],
+  "location": "HomePageTests.i_verify_the_selected_page_by_the_existence_of_the_text(String)"
+});
+formatter.result({
+  "duration": 2011665720,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 960941699,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1096351502,
+  "status": "passed"
+});
+formatter.background({
+  "line": 6,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 7,
+  "name": "I launch the BDDOT home page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CommonSteps.i_launch_the_BDDOT_home_page()"
 });

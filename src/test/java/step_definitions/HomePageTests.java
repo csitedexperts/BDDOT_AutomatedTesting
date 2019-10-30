@@ -21,4 +21,19 @@ public class HomePageTests extends DoctorPage{
 	}
 
 
+	@When("^I select \"(.*?)\" link on the bddot home page$")
+	public void i_select_link_on_the_bddot_home_page(String homeLink_text) throws Throwable {
+
+		driver.findElement(By.linkText(homeLink_text)).click();
+
+		Thread.sleep(2000);   // temporary wait
+	}
+
+	@Then("^I verify the selected page by the existence of the \"(.*?)\" text$")
+	public void i_verify_the_selected_page_by_the_existence_of_the_text(String linkedPage_text) throws Throwable {
+		Assert.assertEquals(true, driver.getPageSource().contains(linkedPage_text));
+		Thread.sleep(2000);   // temporary wait
+	}
+
+
 }
