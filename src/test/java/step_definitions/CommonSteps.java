@@ -14,8 +14,6 @@ public class CommonSteps {
 	public CommonSteps() {
 		driver = Hooks.webDriver;
 		driver.manage().window().maximize();
-
-//		new GooglePage(driver);
 	}
 
 
@@ -25,7 +23,6 @@ public class CommonSteps {
 		driver.get("http://dev.bddot.com");
 		
 		Assert.assertEquals(true, driver.getPageSource().contains("Services"));
-		Thread.sleep(2000);
 	}
 
 	@Given("^I launch the OLD BDDOT home page$")

@@ -1,5 +1,5 @@
-@regression @wip
-Feature: GitHub Repo Test
+@regression
+Feature: BDDot Homepage Test
 As a BDDot application tester,
 I want to check the application.
 
@@ -12,10 +12,11 @@ Scenario Outline: checking some elements from the home page
 
 Examples:
   |homePageLink_text|linkedPage_text|
-	|DOCTOR|HOSPITAL|
-	|HOSPITAL|HOSPITAL|
-	|DIAGNOSTIC|DIAGNOSTIC|	
-	|AMBULANCE|AMBULANCE|	
+	|DOCTOR|doctor|
+	|Login|login|
+	|Registration|registration|
+#	|HOSPITAL|hospital|
+#	|DIAGNOSTIC|diagnostic|	
 
 
 
