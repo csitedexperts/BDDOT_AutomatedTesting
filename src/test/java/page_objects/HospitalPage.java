@@ -16,6 +16,7 @@ public class HospitalPage {
 	public static By Search_Total_Count = By.id("totalCount");
 	public static By Hospital_Name_Filter = By.id("SpecilityOrDoctorName");
 	public static By Hospital_Name_Filter_Value = By.id("SpecilityId");
+	public static By Hospital_First_List_Item = By.xpath("/html/body/section/div/div[2]/div[1]/div[2]/h4");
 	public static By Search_Button = By.id("primary-srch");
 	
 	public static By Total_Result = By.id("totalCount");

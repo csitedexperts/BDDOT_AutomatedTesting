@@ -30,7 +30,6 @@ public class CommonSteps {
 		driver.get("http://www.bddot.com");
 		
 		Assert.assertEquals(true, driver.getPageSource().contains("SEARCH FOR DOCTOR/HOSPITAL"));
-		Thread.sleep(2000);
 	}
 
 
